@@ -11,4 +11,10 @@ public class MSNMessenger extends ServicoMensagemInstantanea{
 		System.out.println("Recebendo mensagem pelo MSN Messenger");
 	}
 
+	@Override
+	public void salvarHistoricoMensagem() {
+		System.out.println("Salvando o historico pelo Facebook MSN Messenger");
+		
+	}
+
 }

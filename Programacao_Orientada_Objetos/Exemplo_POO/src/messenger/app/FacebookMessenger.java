@@ -10,5 +10,10 @@ public class FacebookMessenger extends ServicoMensagemInstantanea {
 	public void receberMensagem() {
 		System.out.println("Recebendo mensagem pelo Facebook Messenger");
 	}
+	@Override
+	public void salvarHistoricoMensagem() {
+		System.out.println("Salvando o historico pelo Facebook Messenger");
+		
+	}
 
 }

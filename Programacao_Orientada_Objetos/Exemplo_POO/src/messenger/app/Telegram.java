@@ -8,5 +8,10 @@ public class Telegram extends ServicoMensagemInstantanea{
 	public void receberMensagem() {
 		System.out.println("Recebendo mensagem pelo Telegram");
 	}
+	@Override
+	public void salvarHistoricoMensagem() {
+		System.out.println("Salvando o historico pelo Telegram");
+		
+	}
 
 }
