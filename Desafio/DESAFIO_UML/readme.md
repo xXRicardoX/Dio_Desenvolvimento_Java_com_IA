@@ -1,6 +1,6 @@
 # Desafio DIO Java Basico relacionado ao bootcamp Desenvolvimento Java com IA
 
-## O desafio proposto foi
+## O desafio proposto
 ### Modelagem e Diagramação de um Componente iPhone
 Neste desafio, você será responsável por modelar e diagramar a representação UML do componente iPhone, abrangendo suas funcionalidades como Reprodutor Musical, Aparelho Telefônico e Navegador na Internet.
 
