@@ -3,7 +3,7 @@ package collections.introducao.exemplo.comparableXcomparator;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Main {
+public class Principal {
 	public static void main(String[] args) {
 		System.out.println("---------------------------------------");
 		ArrayList<Livro> livros = new ArrayList<Livro>() {
