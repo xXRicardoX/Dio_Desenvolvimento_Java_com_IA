@@ -3,8 +3,6 @@ package collections.list.OperacoesBasicas;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 public class CarrinhoDeCompras {
 	private List<Item> itemLista;
 
@@ -13,7 +11,9 @@ public class CarrinhoDeCompras {
 	}
 
 	public void adicionarItem(String nome, double preco, int quantidade) {
-		itemLista.add(new Item(nome, preco, quantidade));
+		Item item = new Item(nome, preco, quantidade);
+		this.itemLista.add(item);
+
 	}
 
 	public void removerItem(String nome) {
@@ -27,7 +27,7 @@ public class CarrinhoDeCompras {
 		itemLista.removeAll(itensParaRemover);
 	}
 
-	public double calcularValorTotal(){
+	public double calcularValorTotal() {
 		double valorTotal = 0d;
 		if (!itemLista.isEmpty()) {
 			for (Item item : itemLista) {
@@ -46,15 +46,27 @@ public class CarrinhoDeCompras {
 	}
 
 	public static void main(String[] args) {
+		// Criando uma instância do carrinho de compras
 		CarrinhoDeCompras listaItens = new CarrinhoDeCompras();
 
-		listaItens.adicionarItem("Detergente", 25.50, 2);
-		listaItens.adicionarItem("Sabonte", 0.75, 11);
-		listaItens.adicionarItem("Refrigerante", 10.15, 10);
-		System.out.println("Valor total: R$" + listaItens.calcularValorTotal());
+		// Adicionando itens ao carrinho
+		listaItens.adicionarItem("Detergente", 25.50d, 2);
+		listaItens.adicionarItem("Sabonte", 0.75d, 11);
+		listaItens.adicionarItem("Refrigerante", 10.15d, 10);
+		listaItens.adicionarItem("Sucrilhos", 10.15d, 10);
+
+		// Exibindo os itens no carrinho
 		listaItens.exibirItens();
+
+		// Removendo um item do carrinho
 		listaItens.removerItem("Detergente");
+
+		// Exibindo os itens atualizados no carrinho
 		listaItens.exibirItens();
+
+		// Calculando e exibindo o valor total da compra
+		System.out.println("Valor total: R$" + listaItens.calcularValorTotal());
+
 	}
 
 }
