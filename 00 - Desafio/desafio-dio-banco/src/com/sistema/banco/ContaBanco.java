@@ -1,20 +1,14 @@
 package com.sistema.banco;
 
-<<<<<<< HEAD
 import com.sistema.banco.conta.Cliente;
 import com.sistema.banco.conta.ContaCliente;
 
 import java.util.ArrayList;
-=======
-import com.sistema.banco.conta.ContaCliente;
-
->>>>>>> 733a75ae49ef2684715a510cf629d8783524673a
 import java.util.List;
 
 public class ContaBanco {
     private String nome;
     private List<ContaCliente> contas;
-<<<<<<< HEAD
     private List<Cliente> clientes;
 
     public ContaBanco(String nome) {
@@ -57,22 +51,4 @@ public class ContaBanco {
 
 
 
-=======
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public List<ContaCliente> getContas() {
-        return contas;
-    }
-
-    public void setContas(List<ContaCliente> contas) {
-        this.contas = contas;
-    }
->>>>>>> 733a75ae49ef2684715a510cf629d8783524673a
 }
