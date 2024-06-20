@@ -5,7 +5,7 @@ import com.sistema.banco.conta.Cliente;
 import com.sistema.banco.conta.ContaCliente;
 
 public class ContaPoupanca extends ContaCliente {
-<<<<<<< HEAD
+
     private double taxaDeJuros;
 
 
@@ -28,17 +28,6 @@ public class ContaPoupanca extends ContaCliente {
         System.out.println("Taxa de Juros: " + (taxaDeJuros * 100) + "%");
     }
 
-=======
 
-    public ContaPoupanca(Cliente cliente) {
-        super(cliente);
-    }
-
-    @Override
-    public void imprimirExtrato() {
-        System.out.println("=== Extrato Conta Poupança ===");
-        super.imprimirExtrato();
-    }
->>>>>>> 733a75ae49ef2684715a510cf629d8783524673a
 }
 
