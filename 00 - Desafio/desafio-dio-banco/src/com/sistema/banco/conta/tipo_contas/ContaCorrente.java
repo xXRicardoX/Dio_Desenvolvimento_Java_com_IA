@@ -4,6 +4,7 @@ import com.sistema.banco.conta.Cliente;
 import com.sistema.banco.conta.ContaCliente;
 
 public class ContaCorrente extends ContaCliente {
+<<<<<<< HEAD
     private double limiteChequeEspecial;
 
     public ContaCorrente(String numero, Cliente cliente, double limiteChequeEspecial) {
@@ -23,11 +24,17 @@ public class ContaCorrente extends ContaCliente {
             System.out.println("Saldo e limite de cheque especial insuficientes.");
             return false;
         }
+=======
+
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
+>>>>>>> 733a75ae49ef2684715a510cf629d8783524673a
     }
 
     @Override
     public void imprimirExtrato() {
         System.out.println("=== Extrato Conta Corrente ===");
+<<<<<<< HEAD
         System.out.println("Número: " + getNumero());
         System.out.println("Cliente: " + getCliente().getNome());
         System.out.println("Saldo: R$ " + getSaldo());
@@ -35,4 +42,8 @@ public class ContaCorrente extends ContaCliente {
     }
 
 
+=======
+        super.imprimirExtrato();
+    }
+>>>>>>> 733a75ae49ef2684715a510cf629d8783524673a
 }
