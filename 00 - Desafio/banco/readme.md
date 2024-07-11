@@ -1,4 +1,3 @@
-```markdown
 # Sistema Bancário Digital com Spring Boot
 
 Este projeto demonstra a implementação de um sistema bancário digital simplificado usando os padrões de projeto Facade, Strategy e Singleton em Java com Spring Boot.
